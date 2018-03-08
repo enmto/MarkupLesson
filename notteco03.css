@@ -10,16 +10,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 480px){
-  .container {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
-/*センタリング*/
-.center{
+/*中央寄せのボックス*/
+.contents-box{
   text-align: center;
   margin-bottom: 10px;
 }
@@ -296,6 +289,19 @@ header a:hover {
   float: right;
   font-size: 12px;
 }
+.users br {
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+  .voice .users {
+    color: #CCCCCC
+  }
+
+  .users br {
+    display: unset;
+  }
+}
 
 .voice h2, .howto h2 {
   margin-top: 50px;
@@ -464,7 +470,6 @@ margin: 20px;
   display: table;
   width: 100%;
   padding-bottom: 20%;
-  /*background-size: contain;画像を全部表示させたいとき*/
 }
 @media screen and (max-width:480px) {
   .driveimg {
