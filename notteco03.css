@@ -1,0 +1,525 @@
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+/*全体の横幅を決める*/
+.container {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*中央寄せのボックス*/
+.contents-box{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*のってこマークや色の装飾*/
+.ntcmark {
+  background: linear-gradient(transparent 60%, #fcff97 60%);
+  color: #50BAA1;
+}
+
+.ntccolor {
+  color: #50BAA1;
+}
+
+.fontclr {
+  color: #757c7b;
+}
+
+/*ヘッダー*/
+header {
+  margin-left: 10px;
+}
+header h1 {
+  font-size: 8px;
+  padding: 0;
+  margin: 5px 0 0 0;
+  color: #757c7b;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+header img {
+  max-height: 36px;
+}
+
+header a {
+  padding: 5px 0 5px 0;
+  height: 46px;
+}
+header a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+/*メイン画像*/
+.main {
+  background-image: url(img/main.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  clear: both;
+}
+
+.mainpicture {
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  text-align: center;
+  max-width: 700px;
+
+}
+
+/*メディア*/
+.media {
+  height: 160px;
+}
+.media img {
+  padding: 28px 14px;
+  height: 30px;
+}
+@media screen and (max-width:480px) {
+  .media {
+    height: 40%;
+  }
+  .media img {
+    padding: 0;
+  }
+}
+
+/*notteco理念のメッセージ*/
+.message {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-image: url(img/lines-dl.png);
+  max-width: 100%;
+}
+
+.message img {
+  width: 200px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.message h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.75em;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.message p {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.75em;
+}
+
+
+@media screen and (max-width:480px){
+  .message {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(img/lines-dl.png);
+    max-width: 100%;
+  }
+
+  .message img {
+    width: 35%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  .message h2 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.75em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .message p {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.75em;
+  }
+}
+
+/*フェス会場への価格例*/
+.price {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+
+/*ドライブ例の何か*/
+.drive h3 {
+  color: #757c7b;
+  font-weight: 100;
+  display:inline;
+}
+
+.drive div {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+/*480にpxにしたときに他のドライブも見るのサイズが480より溢れている*/
+.more img{
+  max-width: 90%;
+}
+
+/*サービス説明と体験者の声のテキスト*/
+.service h2 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.75em;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+.service h2 img {
+  width: 200px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.service h3, .voice h3 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.6em;
+}
+
+.service p, .voice p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+}
+
+@media screen and (max-width:480px) {
+  .service h2 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.75em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .service h2 img {
+    width: 30%;
+    height: auto;
+    vertical-align: middle;
+  }
+  .service h3, .voice h3 {
+    font-size: 14px;
+  }
+  .service p, .voice p {
+    font-size: 10px;
+  }
+}
+
+/*サービス説明と体験者の声のボックス*/
+.quote {
+  background-image: url(img/lines-dl.png);
+  width: 550px;
+  text-align: left;
+  padding: 20px 5px 30px 10px;
+  color: #757c7b;
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width:480px){
+  .quote {
+    background-image: url(img/lines-dl.png);
+    width: 290px;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+    color: #757c7b;
+    border-radius: 0px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+/*480px以上になるまではhtmlの以下brを非表示*/
+@media screen and (max-width:480px){
+  .service br, .voice br {
+    display: none;
+  }
+}
+
+/*画像をquoteに合わせて縦を揃える*/
+.para img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width:480px){
+  .para img {
+    width: 35%;
+    vertical-align: middle;
+  }
+}
+
+.para{
+  margin-bottom: 50px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+@media screen and (max-width:480px){
+  .para {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 5px;
+  }
+}
+
+.voice .users {
+  float: right;
+  font-size: 12px;
+}
+.users br {
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+  .voice .users {
+    color: #CCCCCC
+  }
+
+  .users br {
+    display: unset;
+  }
+}
+
+.voice h2, .howto h2 {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.voice h2 br {
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+  .howto h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .voice h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  } 
+  .voice h2 br {
+    display: unset;
+  }
+}
+
+/*体験者の画像余白*/
+.voice .para img {
+margin: 20px;
+}
+
+@media screen and (max-width:480px) {
+  .voice .para img {
+    width: 35%;
+    margin: 0;
+  }
+}
+
+/*いますぐ登録*/
+.register {
+  margin: 50px 25% 50px 25%;
+  background-color: #ffffff;
+  padding: 30px 40px 30px 40px;
+  clear: both;
+}
+
+.regbcg {
+  background-color: #50BAA1;
+  padding: 100px 0 100px 0;
+  clear: both;
+}
+
+.register img {
+  width: 200px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.register a img {
+  width: 300px;
+  height: auto;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.fb {
+  color: #3b5998;
+}
+
+.mail {
+  color: #e63571;
+}
+
+.mark {
+  background: linear-gradient(transparent 60%, #fcff97 60%);
+}
+
+.register h2 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.register h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.register h3 br {
+  display: none;
+}
+
+.register p {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .register {
+    margin: 50px 10% 50px 10%;
+    background-color: #ffffff;
+    padding: 10px 10px 10px 10px;
+    }
+  .regbcg {
+    background-color: #50BAA1;
+    padding: 10px 0 10px 0;
+    }
+  .register img {
+    width: 35%;
+    height: auto;
+    vertical-align: middle;
+    }
+  .register h2 {
+    font-size: 17px;
+    font-weight: 900;
+  }
+  
+  .register h3 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .register h3 br {
+    display: unset;
+  }
+  
+  .register p {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+
+/*howto*/
+.hbox {
+  width: 200px;
+  float: left;
+  padding: 40px 30px 40px 70px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (max-width:480px){
+  .hbox {
+    width: 30%;
+    float: left;
+    padding: 0 0 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .hbox p {
+    font-size: 10px;
+  }
+  .hbox img {
+    width: 60%;
+  }
+}
+
+/*driveimg*/
+.driveimg{
+  background-image: url(img/gakusei.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: table;
+  width: 100%;
+  padding-bottom: 20%;
+}
+@media screen and (max-width:480px) {
+  .driveimg {
+    padding-bottom: 40%;
+  }
+}
+
+
+/*miniメッセージ*/
+.mini {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mini br {
+  display: none;
+}
+@media screen and (max-width:480px){
+  .mini {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mini br {
+    display: unset;
+  }
+}
+
+/*フッター*/
+footer {
+  clear: both;
+  color: #ffffff;
+  padding: 60px;
+}
+@media screen and (max-width:480px){
+  footer {
+    padding: 30px;
+  }
+}
+
+.footerbcg {
+  background-color: #757c7b;
+}
+
+/*小さいフォントのサイズ*/
+.fontsm {
+  font-size: 14px;
+  font-weight: 300;
+}
+@media screen and (max-width:480px){
+  .fontsm {
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
